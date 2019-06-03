@@ -13,7 +13,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 //
-public class TC_001 {
+public class TC_001a {
 
 	@Test
 	public void testcase1()
