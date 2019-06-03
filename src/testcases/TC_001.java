@@ -20,6 +20,11 @@ public class TC_001 {
 	{
 		System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver");
 		ChromeDriver driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+        	options.addArguments("headless");
+        	options.addArguments("window-size=1200x600");
+        	WebDriver driver = new ChromeDriver(options);
+		
 		driver.get("http://www.facebook.com");
 		driver.findElementById("email").sendKeys("Hello");
 		driver.findElementById("pass").sendKeys("Hello");
