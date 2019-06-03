@@ -19,7 +19,6 @@ public class TC_001 {
 	public void testcase1()
 	{
 		System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver");
-		chromeOptions.addArguments("--headless");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("http://www.facebook.com");
 		driver.findElementById("email").sendKeys("Hello");
